@@ -4,30 +4,22 @@ public class Person {
     private String name;
     private String surname;
 
-    public Person() {
-        id = 1;
-    }
-
     public Person(String name, String surname) {
         id = 1;
         this.name = name;
         this.surname = surname;
     }
-
-    public int getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
+    // те методы были не нужны в дальнейшем, я их убрал
 
     @Override
     public String toString() {
-        return String.format("ID %d: %s %s", id, name, surname);
+        return "ID: " + id + ", Name: " + name + ", Surname: " + surname;
+    }
+
+    public double getPaymentAmount() {
+        return 0.0;
     }
 }
+
+
+// наконец разобрался с синтаксисом
